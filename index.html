@@ -2,21 +2,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Guess the Coaster</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>🎢 Guess the Coaster</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+    #coaster-img { border-radius: 12px; margin-bottom: 20px; }
+    input { padding: 10px; width: 300px; }
+    button { padding: 10px 20px; margin-left: 10px; }
+    #feedback { margin-top: 20px; font-weight: bold; }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>🎢 Guess the Coaster</h1>
-    <div id="image-container">
-      <img id="coaster-img" src="img/placeholder.jpg" alt="Coaster" />
-    </div>
-    <input type="text" id="guess-input" placeholder="Enter coaster name..." />
+  <h1>🎢 Guess the Coaster</h1>
+  <img id="coaster-img" src="" alt="Coaster Image" width="400">
+  <div>
+    <input type="text" id="guess-input" placeholder="Your guess...">
     <button onclick="checkGuess()">Submit</button>
-    <p id="feedback"></p>
   </div>
+  <p id="feedback"></p>
+
+  <script src="coasters.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

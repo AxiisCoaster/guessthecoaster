@@ -41,20 +41,27 @@ function updateTexts() {
 function showCoaster() {
   const coaster = coasters[current];
   imgEl.src = coaster.image;
-  choicesEl.innerHTML = "";
   feedbackEl.textContent = "";
-  coaster.options.forEach(option => {
+
+  choicesEl.innerHTML = "";
+  coaster.options.forEach((option) => {
     const btn = document.createElement("button");
+    btn.textContent = option;
     btn.onclick = () => {
-  if (option === coaster.answer) {
-    feedbackEl.textContent = translations[lang].correct;
-    score++;
-  } else {
-    feedbackEl.textContent = translations[lang].wrong;
-    score = Math.max(0, score - 1);
-  }
-  updateTexts(); // pour mettre à jour le score affiché
-};
+      if (option === coaster.answer) {
+        feedbackEl.textContent = translations[lang].correct;
+        score++;
+      } else {
+        feedbackEl.textContent = translations[lang].wrong;
+        score = Math.max(0, score - 1);
+      }
+      updateTexts();
+    };
+    choicesEl.appendChild(btn);
+  });
+
+  updateTexts(); // affiche le score mis à jour
+}
     choicesEl.appendChild(btn);
   });
 }

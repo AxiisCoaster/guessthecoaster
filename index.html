@@ -2,25 +2,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>🎢 Guess the Coaster</title>
-  <style>
-    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
-    #coaster-img { border-radius: 12px; margin-bottom: 20px; }
-    input { padding: 10px; width: 300px; }
-    button { padding: 10px 20px; margin-left: 10px; }
-    #feedback { margin-top: 20px; font-weight: bold; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guess the Coaster</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>🎢 Guess the Coaster</h1>
-  <img id="coaster-img" src="" alt="Coaster Image" width="400">
-  <div>
-    <input type="text" id="guess-input" placeholder="Your guess...">
-    <button onclick="checkGuess()">Submit</button>
+  <div class="container">
+    <button id="lang-toggle">FR</button>
+    <h1 id="game-title">Guess the Roller Coaster</h1>
+    <img id="coaster-img" src="img/everest.jpg" alt="Coaster" width="400"/>
+    <div class="choices" id="choices"></div>
+    <p id="feedback"></p>
+    <button id="next-btn">Next</button>
   </div>
-  <p id="feedback"></p>
-
   <script src="coasters.js"></script>
   <script src="script.js"></script>
 </body>

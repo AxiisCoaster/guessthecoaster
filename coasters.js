@@ -1,39 +1,28 @@
+
 const coasters = [
   {
-    "name": "Expedition Everest",
-    "image": "img/everest.jpg",
-    "acceptedAnswers": [
-      "expedition everest",
-      "everest"
-    ]
+    image: "img/everest.jpg",
+    answer: "Expedition Everest",
+    options: ["Expedition Everest", "Big Thunder Mountain", "Matterhorn Bobsleds"]
   },
   {
-    "name": "Steel Vengeance",
-    "image": "img/steel.jpg",
-    "acceptedAnswers": [
-      "steel vengeance"
-    ]
+    image: "img/steel.jpg",
+    answer: "Steel Vengeance",
+    options: ["Steel Vengeance", "Iron Gwazi", "Zadra"]
   },
   {
-    "name": "Taron",
-    "image": "img/taron.jpg",
-    "acceptedAnswers": [
-      "taron"
-    ]
+    image: "img/taron.jpg",
+    answer: "Taron",
+    options: ["Taron", "Helix", "VelociCoaster"]
   },
   {
-    "name": "Shambhala",
-    "image": "img/shambhala.jpg",
-    "acceptedAnswers": [
-      "shambhala"
-    ]
+    image: "img/kingdaka.jpg",
+    answer: "Kingda Ka",
+    options: ["Top Thrill 2", "Kingda Ka", "Red Force"]
   },
   {
-    "name": "Kingda Ka",
-    "image": "img/kingdaka.jpg",
-    "acceptedAnswers": [
-      "kingda ka",
-      "kingdaka"
-    ]
+    image: "img/shambhala.jpg",
+    answer: "Shambhala",
+    options: ["Shambhala", "Silver Star", "Fury 325"]
   }
 ];
